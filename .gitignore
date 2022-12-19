@@ -151,5 +151,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-gpt3-assitant/Scripts
+gpt3-assistant/
 gpt3-assistant/Scripts/tqdm.exe

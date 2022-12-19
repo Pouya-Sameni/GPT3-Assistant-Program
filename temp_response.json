@@ -1,0 +1,19 @@
+{
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nHappy Birthday, Rezvan! Wishing you a day filled with joy"
+    }
+  ],
+  "created": 1671493481,
+  "id": "cmpl-6PK6DtiZqtVgNMX9QzrdeRykNrQxy",
+  "model": "text-davinci-003",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 16,
+    "prompt_tokens": 15,
+    "total_tokens": 31
+  }
+}

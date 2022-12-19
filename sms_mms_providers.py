@@ -5,5 +5,5 @@ PROVIDERS = {
 
     "Bell": {"sms": "txt.bell.ca", "mms_support" : True},
 
-    "Koodo " : {"sms": "msg.koodomobile.com", "mms_support" : True}
+    "Koodo" : {"sms": "msg.koodomobile.com", "mms_support" : True}
 }
