@@ -153,3 +153,4 @@ cython_debug/
 
 gpt3-assistant/
 gpt3-assistant/Scripts/tqdm.exe
+*.json

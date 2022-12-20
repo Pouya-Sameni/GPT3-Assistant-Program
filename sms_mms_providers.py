@@ -1,5 +1,5 @@
 PROVIDERS = {
-    "Telus": {"sms": "msg.telus.com", "mms": "mms.att.net", "mms_support": True},
+    "Telus": {"sms": "mms.mb.telus.com", "mms": "mms.att.net", "mms_support": True},
 
     "Rogers": {"sms": "pcs.rogers.com", "mms": "mms.att.net", "mms_support": True},
 

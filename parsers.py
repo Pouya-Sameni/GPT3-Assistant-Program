@@ -10,7 +10,7 @@ def get_text_body(message:str):
     return ""
 
 
-def parse_gpt_resonse(response):
+def parse_gpt_resonse():
     f = open('temp_response.json')
     data = json.load(f)
 

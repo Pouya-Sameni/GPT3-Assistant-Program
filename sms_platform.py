@@ -30,8 +30,9 @@ def send_sms_via_email(
     msg = MIMEMultipart()
     msg['From'] = sender_email
     msg['To'] = receiver_email
-    msg['Subject'] = message
-
+    msg['Subject'] = subject
+    #msg['Message'] = message
+    msg.attach(MIMEText(message))
     with smtplib.SMTP_SSL(
         smtp_server, smtp_port, context=ssl.create_default_context()
     ) as email:
