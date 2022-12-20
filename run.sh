@@ -1,2 +1,2 @@
-. venv/Script/bin/activate
+. venv/bin/activate
 python main.py
