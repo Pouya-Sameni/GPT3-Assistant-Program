@@ -61,9 +61,6 @@ def recieve_sms_via_email():
                 # Parse the message using the email library
                 msg = email.message_from_bytes(data[0][1])
 
-                #Print the message details
-                print("From:", msg['From'])
-
                 # Get the message body
                 if msg.is_multipart():
                     # If the message is multipart, get the plain text version of the message
@@ -76,13 +73,13 @@ def recieve_sms_via_email():
                 message = msg_body.decode()
                 parsers.get_text_body(message)
                 
-                return message
+                return [message,msg['From']]
 
     # Close the connection to the server
     imap_server.close()
     imap_server.logout()
 
-    return ""
+    return ["",""]
     
 
 

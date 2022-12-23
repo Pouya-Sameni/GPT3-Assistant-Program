@@ -1,5 +1,7 @@
 import xml.etree.ElementTree as ET
 import json
+import re
+
 
 def get_text_body(message:str):
 
@@ -19,3 +21,7 @@ def parse_gpt_resonse():
     # Closing file
     f.close()
     return str
+
+def validate_sender(fromEmail:str)->bool:
+    pattern = r'\d{10}'
+    return bool(re.search(pattern, fromEmail))

@@ -6,8 +6,18 @@ from decouple import config
 import google_cal
 
 while True:
-    command = parsers.get_text_body(SP.recieve_sms_via_email()).strip()
+    emailBody = SP.recieve_sms_via_email()
+
+    command = parsers.get_text_body(emailBody[0]).strip()
     
+    sender = emailBody[1].strip()
+
+    if (not parsers.validate_sender(sender) and command != ""):
+        print("Invalid Email From " + sender + " Skipping...")
+        continue
+    elif command != "":
+        print("Email From " + sender)
+
     firstCommand = command[0:command.find("\n")].strip()
     if len(command) != 0 and firstCommand == "?schedule":
         command = command[command.find("\n"):]
