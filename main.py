@@ -32,6 +32,9 @@ while True:
         print(response)
         SP.send_sms_via_email(number=config('phone_number'), message=response, provider="Telus")
 
+    elif len(command) != 0 and command == "?EXIT":
+        print("EXIT Command Detected, Quitting Program")
+        break
     elif len(command) != 0:
         print ("Command: " + command)
         response = gpt.get_GPT3_davinci_response(command)
